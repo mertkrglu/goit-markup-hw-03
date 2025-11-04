@@ -1,0 +1,156 @@
+html {
+  font-size: 16px; /* C1 */
+}
+/*Temel*/
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif; /* C5, C6 */
+  line-height: 1.5; /* C10 */
+}
+
+/*Header*/
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #2e2f42;
+  text-decoration: none;
+}
+
+.header a:hover,
+.header a:focus {
+  color: #434455; /* C3 */
+  outline: none;
+}
+
+/*Navigasyon*/
+.nav a {
+  color: rgba(46, 47, 66, 1);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: #404bbf; /* C3 */
+}
+
+/*Adres*/
+.address a {
+  font-weight: 400;
+  text-decoration: none;
+  color: rgba(67, 68, 85, 1);
+}
+
+.address a:hover,
+.address a:focus {
+  color: #404bbf; /* C3 */
+}
+
+/*Hero*/
+.hero {
+  background-color: #2e2f42; /* C11 */
+}
+
+.hero h1 {
+  font-weight: 700; /* C12 */
+  font-style: bold;
+  line-height: 1.07142857143; /* C10 */
+  color: #ffffff; /* C11 */
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.111111111; /* C10 */
+  color: #2e2f42;
+}
+
+.strategy li p,
+.portfolio li p,
+.team-li p,
+.footer p {
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 20px;
+  color: #2e2f42;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.strategy p {
+  line-height: 1.5;
+}
+
+/*Takım*/
+.team {
+  background-color: #f4f4fd; /* C11 */
+}
+
+.team-li h3 {
+  font-weight: 500; /* C12 */
+  line-height: 1.2; /* C10 */
+  color: #2e2f42; /* C11 */
+}
+
+.team-li h3:hover,
+.team-li h3:focus {
+  color: #4d5ae5; /* C4 */
+}
+
+.team-li p {
+  color: #434455; /* C11 */
+}
+
+/*Portfolio*/
+.portfolio h3 {
+  font-weight: 500; /* C12 */
+}
+
+/*Button*/
+.button {
+  cursor: pointer; /* C13 */
+  font-family: inherit;
+  color: #ffffff;
+  background-color: rgba(77, 90, 229, 1); /* C11 */
+  border: none;
+  line-height: 1.5; /* C10 */
+  font-weight: 500;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
+  box-shadow: 0px 4px 4px 0px rgba(64, 75, 191, 1);
+}
+
+/*Footer*/
+.footer {
+  background-color: #2e2f42; /* C11 */
+  color: #ffffff; /* C11 */
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.span-1,
+.span-2 {
+  color: rgba(77, 90, 229, 1); /* C11 */
+}
+
+.strategy li,
+.portfolio li,
+.team-li {
+  list-style: none; /* C9 */
+}
+
+/*sayfada raleway fontu 2 defa kullanıldığı için onları kullanılan yere verdim. Geri kalan roboto kullandı.*/
