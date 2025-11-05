@@ -10,10 +10,13 @@ body {
 /* B13 maddesi */
 .header {
   border-bottom: 1px solid #e7e9fc; /* B13 */
-  height: 72px;
-  width: 1440px;
   padding-top: 24px; /*üst boşluk figmada top 24 olarak görünüyor*/
   padding-bottom: 24px; /*alt boşluk figmada bottom 24 olarak görünüyor*/
+  /* width: 1440px; ve height: 72px; figmada görünmesine rağmen container içinde olduğu için kaldırdım */
+}
+
+.header .span-1 {
+  color: rgba(77, 90, 229, 1); /* C11 */
 }
 
 /* B10 maddesi */
@@ -91,11 +94,8 @@ body {
   display: flex;
   align-items: center;
   text-align: center; /* h1 ve buton ortalancak*/
-}
-
-.hero-container {
-  width: 1158px;
-  margin: 0 auto;
+  padding-top: 188px; /*üst boşluk figmada top 188 olarak görünüyor*/
+  padding-bottom: 188px; /*alt boşluk figmada bottom 188 olarak görünüyor*/
 }
 
 .hero-title {
@@ -133,6 +133,27 @@ h3 {
   font-weight: 500;
 }
 
+/*Strateji*/
+.strategy {
+  padding-top: 120px; /*üst boşluk figmada top 120 olarak görünüyor*/
+  padding-bottom: 120px; /*alt boşluk figmada bottom 120 olarak görünüyor*/
+}
+
+.strategy-ul {
+  display: flex;
+  justify-content: space-between; /* aralarında eşit boşluk */
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.strategy-li {
+  flex-basis: calc(
+    (100% - 24px) / 4
+  ); /* 4 eşit sütun için genişlik ayarı  gap 8 px 3 boşluk*/
+}
+
 .strategy p {
   line-height: 1.5;
 }
@@ -140,6 +161,34 @@ h3 {
 /*Takım*/
 .team {
   background-color: #f4f4fd; /* C11 */
+  padding-top: 120px; /*üst boşluk figmada top 120 olarak görünüyor*/
+  padding-bottom: 120px; /*alt boşluk figmada bottom 120 olarak görünüyor*/
+  text-align: center;
+}
+
+.team-ul {
+  display: flex;
+  justify-content: space-between; /* aralarında eşit boşluk */
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-li {
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  flex-basis: calc((100% - 96px) / 4); /* 4 kart için (3 * 32px boşluk) */
+  overflow: hidden; /* görsel taşmasın */
+}
+
+.team h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: rgba(46, 47, 66, 1);
+  margin-bottom: 72px; /* başlık ile kartlar arasına boşluk  figmada görünen figmada bu mesafeyi ölçmek için kartı seçip alt tuşuna basıyorum ve neyle ölçmek istiyorsam orayı ölçüyorum*/
 }
 
 .team-li h3 {
@@ -158,8 +207,55 @@ h3 {
 }
 
 /*Portfolio*/
-.portfolio h3 {
-  font-weight: 500; /* C12 */
+
+.portfolio {
+  padding-top: 120px; /*üst boşluk figmada top 120 olarak görünüyor*/
+  padding-bottom: 120px; /*alt boşluk figmada bottom 120 olarak görünüyor*/
+}
+
+.portfolio h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.portfolio-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-li {
+  width: calc((100% - 48px) / 3); /* 3 sütun için (2 * 24px boşluk) */
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #e7e9fc;
+  overflow: hidden; /* görsel taşmasın */
+}
+
+.portfolio-li img {
+  width: 100%; /* görselin kapsayıcı genişliğine uyum sağlaması için */
+  display: block; /* img etiketinin altındaki boşluğu kaldırmak için */
+  height: auto; /* orantılı olarak yükseklik ayarı */
+}
+
+.portfolio-li h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e2f42;
+  margin: 32px 16px 8px;
+}
+
+.portfolio-li p {
+  color: #434455;
+  font-size: 16px;
+  margin: 0 16px 32px;
 }
 
 /*Button*/
@@ -188,6 +284,27 @@ h3 {
 .footer {
   background-color: #2e2f42; /* C11 */
   color: #ffffff; /* C11 */
+  padding-top: 120px; /*üst boşluk figmada top 120 olarak görünüyor*/
+  padding-bottom: 120px; /*alt boşluk figmada bottom 120 olarak görünüyor*/
+}
+
+.footer .container {
+  width: 1158px;
+  margin: 0 auto;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #4d5ae5; /* web kısmı */
+  font-family: "Raleway", sans-serif;
+}
+
+.footer .span-2 {
+  color: #f4f4fd; /* STUDIO kısmı */
 }
 
 .footer a {
@@ -195,9 +312,12 @@ h3 {
   text-decoration: none;
 }
 
-.span-1,
-.span-2 {
-  color: rgba(77, 90, 229, 1); /* C11 */
+.footer p {
+  color: #f4f4fd; /* açık gri yazı */
+  font-size: 16px;
+  line-height: 1.5;
+  width: 264px;
+  margin: 0;
 }
 
 .strategy li,
@@ -230,6 +350,7 @@ ul {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
+  width: 100%;
 }
 
 /* B6,B8 ve B9 de istenen container kısmı */
