@@ -98,6 +98,12 @@ body {
   padding-bottom: 188px; /*alt boşluk figmada bottom 188 olarak görünüyor*/
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-title {
   font-weight: 700; /* C12 */
   font-style: bold;
@@ -105,11 +111,11 @@ body {
   color: #ffffff; /* C11 */
   font-size: 56px;
   font-family: "Roboto", sans-serif;
-  font-size: 56px;
-  line-height: 3.75;
+  width: 496px;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 48px; /* başlık ile buton arasına boşluk */
+  text-align: center;
 }
 
 h2 {
@@ -142,7 +148,7 @@ h3 {
 .strategy-ul {
   display: flex;
   justify-content: space-between; /* aralarında eşit boşluk */
-  gap: 8px;
+  gap: 24px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -150,7 +156,7 @@ h3 {
 
 .strategy-li {
   flex-basis: calc(
-    (100% - 24px) / 4
+    (100% - 72px) / 4
   ); /* 4 eşit sütun için genişlik ayarı  gap 8 px 3 boşluk*/
 }
 
@@ -169,7 +175,7 @@ h3 {
 .team-ul {
   display: flex;
   justify-content: space-between; /* aralarında eşit boşluk */
-  gap: 32px;
+  gap: 24px; /* kartlar arası boşluk düzeltildi 32&24 */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -184,6 +190,13 @@ h3 {
   overflow: hidden; /* görsel taşmasın */
 }
 
+.team-li img {
+  display: block; /* img etiketinin altındaki boşluğu kaldırmak için */
+  width: 100%; /* görselin kapsayıcı genişliğine uyum sağlaması için */
+  height: auto; /* orantılı olarak yükseklik ayarı */
+  margin-bottom: 32px;
+}
+
 .team h2 {
   font-size: 36px;
   font-weight: 700;
@@ -195,6 +208,7 @@ h3 {
   font-weight: 500; /* C12 */
   line-height: 1.2; /* C10 */
   color: #2e2f42; /* C11 */
+  margin-bottom: 8px; /* başlık ile paragraf arasına boşluk */
 }
 
 .team-li h3:hover,
@@ -204,6 +218,7 @@ h3 {
 
 .team-li p {
   color: #434455; /* C11 */
+  margin-bottom: 32px; /* paragraf ile kart altı arasına boşluk */
 }
 
 /*Portfolio*/
@@ -224,7 +239,7 @@ h3 {
 .portfolio-ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px; /* satır arası 48px, sütun arası 24px */
   justify-content: center;
   list-style: none;
   margin: 0;
